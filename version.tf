@@ -14,7 +14,7 @@ terraform {
 #provider block
 #once the plugin has been download in aws they have region specific plugin. 
 provider "aws" {
-  region = "us-east-1"
+  region = var.aws_region
   profile = "default"
 }
 
