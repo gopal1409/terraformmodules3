@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "s3_bucket" {
-  bucket = var.bucket_name
-  acl    = "public-read"
+  bucket = var.bucket_name #once the bucket is created 
+  acl    = "public-read" #wqe will give read access
   policy = <<EOF
 {
   "Version": "2012-10-17",
